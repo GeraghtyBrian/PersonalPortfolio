@@ -1,0 +1,25 @@
+<div ng-controller="NavCtrl as nav">
+	<nav ng-class="{'proActiveNav' : nav.getTab()==1, 'colActiveNav' : nav.getTab()==2, 'sideActiveNav' :nav.getTab()==3, 'defaultActiveNav' : nav.getTab()==0}" class="navbar navbar-default" role="navigation" >
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a ng-click="nav.setActiveTab(0)" class="navbar-brand" href="#/">Brian Geraghty Dev</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="navPro" ng-click="nav.setActiveTab(1)" ng-class="nav.getTab() == 1 ? 'proActive' : 'mainActive'"><a href="#proWork">Proffesional Projects</a></li>
+					<li class="navCol" ng-click="nav.setActiveTab(2)" ng-class="nav.getTab() == 2 ? 'colActive' : 'mainActive'"><a href="#colWork">College Projects</a></li>
+					<li class="navSide" ng-click="nav.setActiveTab(3)" ng-class="nav.getTab() == 3 ? 'sideActive' : 'mainActive'"><a href="#sideWork">Side Projects</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+</div>
