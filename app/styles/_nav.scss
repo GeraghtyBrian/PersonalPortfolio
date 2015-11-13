@@ -1,0 +1,102 @@
+//Nav
+//----
+
+//--Active Tabs
+ul{
+	list-style-type: none;
+}
+
+//transition for personal account links in nav bar
+.personal-links-transition{
+	@include transition(.2s linear);
+}
+
+.personal-links{
+	height:80px;
+	width:auto;
+	padding-top: 22px;
+
+	i{
+		margin-left: 10px;
+		@extend .personal-links-transition;
+		color: #999;
+	}
+
+	.nav-git{&:hover{@extend .personal-links-transition; color:#333333;}}
+	.nav-linked{&:hover{@extend .personal-links-transition; color:#0077b5;}}
+	.nav-facebook{&:hover{@extend .personal-links-transition; color:#3b5998;}}
+}
+
+.navbar-header{
+	padding-top:4px;
+}
+
+.transition-colour{
+	@include transition(all .2s linear);
+}
+
+.mainActive{
+	@extend .transition-colour;
+	background-color:#fff;
+	color:#999;
+}
+
+.nav-li-general{
+	height:100%;
+	border-top:5px solid #fff;
+
+	@media (max-width: 768px){
+		border-top: 0px;
+	}
+}
+
+//Proffesional projects styling
+.navPro{
+	@extend .nav-li-general;
+
+	&:hover{
+		@extend .transition-colour;
+		border-color:$proColour;
+	}
+}
+.proActive{
+	border-color:$proColour;
+}
+
+//collage projects styling
+.navCol{
+	@extend .nav-li-general;
+
+	&:hover{
+		@extend .transition-colour;
+		border-color:$colColour;
+	}
+}
+.colActive{
+	border-color:$colColour;
+}
+
+//Side Projects styling
+.navSide{
+	@extend .nav-li-general;
+
+	&:hover{
+		@extend .transition-colour;
+		border-color:$sideColour;
+	}
+}
+.sideActive{
+	border-color:$sideColour;
+}
+
+
+
+
+
+//--Navbar
+.navbar-default{border-top:0px !important;}
+
+.proActiveNav{border-bottom:#35cf76 1px solid};
+.colActiveNav{border-bottom:#e74c3c 1px solid};
+.sideActiveNav{border-bottom:#409edd 1px solid};
+.defaultActiveNav{};

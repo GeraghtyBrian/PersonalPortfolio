@@ -1,0 +1,37 @@
+//Nav
+//-----
+
+//--Main Colours
+$main-gray:#ecf0f1;
+$font-colour:#999;
+
+
+//--Nav Colours
+$proColour:#35cf76;
+$colColour:#e74c3c;
+$sideColour:#409edd;
+
+
+//Mixins
+//--------
+
+@mixin transition($transition){
+	-webkit-transition: $transition;
+	   -moz-transition: $transition;
+        -ms-transition: $transition;
+            transition: $transition;
+}
+
+@mixin box-shadow($box-shadow){
+	-webkit-box-shadow: $box-shadow;
+	   -moz-box-shadow: $box-shadow;
+        -ms-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
+}
+
+@mixin transform($transform){
+	-webkit-transform: $transform;
+	   -moz-transform: $transform;
+        -ms-transform: $transform;
+            transform: $transform;
+}

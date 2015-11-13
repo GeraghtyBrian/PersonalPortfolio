@@ -1,42 +1,23 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
+@import "_custom.scss";
 //Bootstap Variables Sass-File (Copy)// Modify Here 
 @import "_variablesOverride.scss";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@import "_nav.scss";
+@import "_port-styles.scss";
+@import "_homepage.scss";
+@import "_footer.scss";
 
-//Nav
-//Active Tabs
-
-.mainActive{
-	background-color:#fff;
-	color:#999;
+body{
+	font-family: 'lato';
 }
-.navMain:hover{}
 
-.proActive{
-	background-color:#35cf76 !important;
-	color:#fff !important;
+html {
+	//Show scrollbar (chrome) to stop site moving when content is less than height of screen (Annoying)
+    overflow-y: scroll; 
+    color: $font-colour;
 }
-.navPro:hover{background-color:#35cf76 !important;}
-
-.colActive{
-	background-color:#e74c3c !important;
-}
-.navCol:hover{background-color:#e74c3c !important;}
-
-.sideActive{
-	background-color:#409edd !important;
-}
-.navSide:hover{background-color:#409edd !important;}
-
-
-//Navbar
-.navbar-default{border-top:0px !important;}
-
-.proActiveNav{border-bottom:#35cf76 2px solid};
-.colActiveNav{border-bottom:#e74c3c 2px solid};
-.sideActiveNav{border-bottom:#409edd 2px solid};
-.defaultActiveNav{};
