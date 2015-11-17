@@ -1,0 +1,19 @@
+.contact-form{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	text-align: center;
+	button{
+		width: 200px;
+		margin-top: 20px;
+
+		@media(max-width:768px){
+			width: 100%;
+		}
+	}
+}
+
+.contact-form-title{
+	margin-bottom: 40px;
+	font-family: $title-font;
+	font-size: $title-font-size;
+}

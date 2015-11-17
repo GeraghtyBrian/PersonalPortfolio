@@ -1,14 +1,9 @@
 'use strict';
 
 angular.module('personalPortfolioApp')
-  .controller('NavCtrl', function () {
+  .controller('NavCtrl', function ($scope,$location) {
 
-	var activeTab=0;
-	this.setActiveTab = function(index){
-		activeTab = index;
-	};
-	this.getTab = function(){
-		console.log(activeTab);
-		return activeTab;
-	};
+  	$scope.isActive = function(route) {
+        return route === $location.path();
+    };
   });

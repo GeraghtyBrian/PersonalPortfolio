@@ -7,13 +7,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+//Fonts
+//------
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+
+//Parcials
+//----------
 @import "_nav.scss";
 @import "_port-styles.scss";
 @import "_homepage.scss";
 @import "_footer.scss";
+@import "_animate.scss";
+@import "_contact-form.scss";
 
 body{
-	font-family: 'lato';
+	font-family: $main-font;
 }
 
 html {

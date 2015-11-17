@@ -1,0 +1,181 @@
+* {
+    border-radius: 0 !important;
+}
+
+/*Fix For scroll Broken*/
+html, body {
+    overflow: visible;
+}
+
+
+/* navbar */
+.navbar-default {
+    background-color: #ea6153;
+    border-color: #ea6153;
+}
+.navbar-inner {
+    background-color: #fff;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    font-size: 16px;
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    /*background-color: #fff;*/
+	border-bottom: solid 2px #fff;
+    color: #fff;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+	border-bottom: solid 2px #fff;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #000;
+    background-color: #fff;
+}
+/* caret */
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+span.glyphicon {
+    font-size: 2.8em;
+    margin:5px 0px 2px 15px;
+    color: #fff;
+}
+
+span.glyphicon:hover{
+	border-bottom:2px solid #fff;
+}
+
+span.glyphicon-remove {
+    font-size: 1.7em;
+    margin: 0;
+    color: crimson;
+}
+
+span.glyphicon-remove:hover {
+    border-bottom: 1px solid crimson;
+    cursor: pointer;
+}
+
+.spacerTop{margin-top: 40px;}
+.spacerBottom{margin-bottom: 40px;}
+
+
+
+h2{font-family:"Courier New", Courier, monospace;}
+h3{font-family:"Courier New", Courier, monospace;}
+h4{font-family:"Courier New", Courier, monospace;}
+
+
+
+
+@media (max-width: 767px) {
+    body {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+/*Inside Cart*/
+
+#cartCount { color: #fff; font-size: 20px; }
+#lstCart p { color: #fff; }
+.cart-item { height: 60px; margin-bottom: 5px; }
+.total { color: #fff; border-top: 2px solid #fff; }
+.prices { color: #fff; float: right; }
+
+/*End Inside Cart*/
+
+/*Individual pages*/
+
+/*About*/
+
+#about{
+	min-height:100%;
+	height:auto;
+	}
+
+.picBorder{
+    border: 3px solid #c0392b;
+}
+
+/*End About*/
+
+/*Intro*/
+
+#intro{
+	background:url(../images/primal_bg-01.jpg) center top no-repeat;
+    background-color:#dff0fb;
+    min-height:100%;
+    height:auto;
+}
+
+.unleashText{
+	font-family:"Courier New", Courier, monospace;
+	font-size:45px;
+	}
+
+	
+.yourInnerText{
+	font-size:30px;
+	line-height:35px;
+	}
+
+/*End Intro*/
+
+/*Menu*/
+
+#menu{
+    background-color: #fff;
+    min-height:100%;
+    height:auto;
+    background-color:#dff0fb;
+}
+
+#menu span.glyphicon {
+    font-size: 1.5em;
+    margin:5px 0px 0px 0px;
+    color: #000;
+}
+
+.nutritional-info {
+    margin-top: 5px;
+}
+/*End Menu*/
+
+/*Contact*/
+
+#contact{
+    min-height:100%;
+    height:auto;
+    background-color:#fff;
+}
+.textArea{resize: vertical;}
+
+/*End Contact*/
+
+
+/**/

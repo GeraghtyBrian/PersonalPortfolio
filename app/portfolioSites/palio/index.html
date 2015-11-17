@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Primal - Unleash You Inner Caveman</title>
+    
+    <meta name="description" content="Primal offers a modern take on the paleolithic diet of our “cavemen” ancestors who lived off the land and ate fresh, seasonal, natural produce that encouraged energy, vitality and good health.">
+    <meta name="keywords" content="Primal,Food,Cuisine,Diet,Natural,healty Eating,Order,Collection">
+
+    <link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">   
+    <link rel="stylesheet" href="css/easy-sidebar.css">
+    <link rel="stylesheet" href="css/toastr.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">   
+
+
+<!--Side Nav Checkout-->
+<nav class="navbar navbar-inverse easy-sidebar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle easy-sidebar-toggle" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Cart</a>
+        </div>
+    
+        <ul id="lstCart" class="nav navbar-nav">
+        </ul>
+        <p id="cartTotal" class="total">Total:<span class="prices">$0</span></p>
+        <form class="navbar-form" role="search">
+            <button type="submit" class="btn btn-default">Checkout</button>
+        </form>
+    </div>
+</nav>
+<!--end Side Nav Checkout-->
+
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <div class="pull-left">
+                <span class="glyphicon glyphicon-shopping-cart easy-sidebar-toggle" aria-hidden="true" data-target=".navbar-ex1-collapse"></span>
+                <span id="cartCount"></span>
+            </div>
+            <div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li>
+                    <a  class="page-scroll " href="#page-top">Home</a>
+                </li>
+                <li>
+                    <a class="page-scroll " href="#about">About Us</a>
+                </li>
+                <li>
+                    <a class="page-scroll " href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>
+
+
+<!-- Intro Section -->
+<section id="intro" class="intro-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container">
+                   
+                    <img src="images/brian_PLogo.png" class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-6 col-md-offset-3" alt="Primal Logo"/>
+                    
+                    <span class="col-xs-12 col-md-4 col-md-offset-4 unleashText"><h1>UNLEASH</h1><span class="yourInnerText">YOUR INNER</span><h1>CAVEMAN</h1></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section ">
+    <div class="container formHolder" formHolder>
+        <div class="col-xs-12">
+            <div class=" col-xs-12 col-md-4 formHolder">
+                <img src="images/about/about4.png" class="col-xs-8 col-xs-offset-2 img-responsive">
+                <div class="col-xs-12 text-left"><h2 class="text-center">Why Paleo?</h2></div>
+                <div class="col-xs-12  text-left">
+                    <p>The Paleo diet is the healthiest way you can eat because it is the ONLY nutritional approach that works with your genetics to help you stay lean, strong and energetic! 
+                        <br/><br/>With a very simple shift you not only remove the foods that are at odds with our health (grains, legumes, and dairy) but we also increase our intake of vitamins, minerals, and antioxidants.</p>
+
+                    <img src="images/about/paleo-food-list.jpg" class="img-responsive text-center picBorder">  
+
+                </div>
+            </div><!--1-->
+            <div class=" col-xs-12 col-md-4 formHolder">
+                <img src="images/about/about5.png" class="col-xs-8 col-xs-offset-2 img-img-responsive">
+                <div class="col-xs-12 text-left"><h2 class="text-center">Why Us?</h2></div>
+                <div class="col-xs-12  text-left">
+                    <p>Using the finest, ethically sourced meats, fish and natural ingredients, Primal’s team of chefs have created a delicious range of meals influenced by different seasons, cultures and culinary schools, to keep customers spoilt for choice from breakfast through to evening service.</p>
+
+                    <img src="images/about/paleo-chef.jpg" class="img-responsive text-center picBorder">  
+
+                </div>
+            </div><!--2-->
+            <div class=" col-xs-12  col-md-4 formHolder">
+                <img src="images/about/about6.png" class="col-xs-8 col-xs-offset-2 img-responsive">
+                <div class="col-xs-12 text-left"><h2 class="text-center">Why You?</h2></div>
+                <div class="col-xs-12  text-left">
+                    <p>Primal offers a modern take on the paleolithic diet of our “cavemen” ancestors who lived off the land and ate fresh, seasonal, natural produce that encouraged energy, vitality and good health. 
+                        <br/><br/>Motivated by a passion for seriously delicious food, Primal’s mission is to change the way people see free from food – from an uninspiring dietary restriction to a mouth-watering way of eating that leaves you feeling less bloated and more energized.</p>
+
+                    <img src="images/about/paleo-food-2.jpg" class="img-responsive spacerBottom picBorder">
+
+                </div>
+            </div><!--3-->
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="menu" class="services-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="col-xs-12 spacerBottom">
+                    <div class="col-xs-12 col-md-6">
+                        <h2>Menu</h2>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <p>Use The Menu below To select your order for collection.</p>
+                        <p>Click "Add to Cart" to place the item in your cart.</p>
+                        <p>The cart can be reviewed by clicking the cart icon (<span class="glyphicon glyphicon-shopping-cart glyphCart" aria-hidden="true"></span>) in the top left.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                   
+                    <!--STARTERS-->
+                    <section id="starters">
+                        <h2>Starters</h2>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Soup of the Day</h4>
+                            <h4 class="col-xs-2">$5.00</h4>
+                            <p class="col-xs-12">served with home made bread * almod butter</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Ham Hock & Ox Terrine</h4>
+                            <h4 class="col-xs-2">$7.50</h4>
+                            <p class="col-xs-12">cold pressed * home made piccalilli * watercress * micro herb salad</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Severn Why Smoked Salmon</h4>
+                            <h4 class="col-xs-2">$8.00</h4>
+                            <p class="col-xs-12">candied betroot * home cured salmon gravadiax * dill infused dressing</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Chrispy Baby Squid</h4>
+                            <h4 class="col-xs-2">$7/11</h4>
+                            <p class="col-xs-12">gremolata * saffron alioli * Hawaiian pink sea salt</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Lightly Spiced Tigar Prawns</h4>
+                            <h4 class="col-xs-2">$5.00</h4>
+                            <p class="col-xs-12">pan seared tigar prawnschilli & garlic butter * wild rocket * ginger</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left spacerBottom">
+                            <h4 class="col-xs-10">Beef Cheek</h4>
+                            <h4 class="col-xs-2">$5.00</h4>
+                            <p class="col-xs-12">slow raised ox cheek * parsnip puree * steamed clams</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                    </section>
+                    
+                    <!--END STARTERS
+                    <!--SIDES-->
+                    <section id="sides" >
+                        <h2>Sides</h2>
+                    
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Hand Cut Sweet Potato Chips</h4>
+                            <h4 class="col-xs-2">$3.50</h4>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Seasonal Greens</h4>
+                            <h4 class="col-xs-2">$3.00</h4>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">SSuper Green Leaf Salad</h4>
+                            <h4 class="col-xs-2">$3.00</h4>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Roasted Roots</h4>
+                            <h4 class="col-xs-2">$3.00</h4>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Sauteed Galic & Herb Mushrooms</h4>
+                            <h4 class="col-xs-2">$3.00</h4>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                        </div>
+
+                        <div class="col-xs-12 text-left spacerBottom">
+                            <h4 class="col-xs-10">Avocado</h4>
+                            <h4 class="col-xs-2">$3.00</h4>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                    </section>
+                    <!--END SIDES-->
+                    
+                </div>
+                <div class="col-xs-12 col-md-4">
+                   
+                    <!--MAINS-->
+                    <section id="main">
+                        <h2>Mains</h2>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Wild Caught Salmon</h4>
+                            <h4 class="col-xs-2">$14.00</h4>
+                            <p class="col-xs-12">honey & chilli * lightly pickeled raw vegtables * flax & chia seeds</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Wagyu Beef Burger</h4>
+                            <h4 class="col-xs-2">$13.00</h4>
+                            <p class="col-xs-12">paleo or baby gem wrapped * roasted half balsamic tomato * sweet potato chips</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Home Made Swet Potato Croquettes</h4>
+                            <h4 class="col-xs-2">$12.00</h4>
+                            <p class="col-xs-12">coconut cream tomato ragu * crispy sage * watercress * matcha dressing</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Donegal Free Range Chicken</h4>
+                            <h4 class="col-xs-2">$16.50</h4>
+                            <p class="col-xs-12">stuffed with sage * wrapped in parma ham * peperonata * jus * sage dressing</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Wild Caught Cornish Sole</h4>
+                            <h4 class="col-xs-2">$17.00</h4>
+                            <p class="col-xs-12">oven baked sole * caramelised lemon * watercress * beurre noisette</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 text-left spacerBottom">
+                            <h4 class="col-xs-10">Finger Licken' BBQ Beef Ribs</h4>
+                            <h4 class="col-xs-2">$20.00</h4>
+                            <p class="col-xs-12">home-made paleo BBQ sauce * caramelised lemon * with sweet potato chips</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--END MAINS-->
+                    <!--STEAKS-->
+                    
+                    <section id="Steaks">
+                        <h2>Steaks </h2>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">10oz Rib Eye Steak</h4>
+                            <h4 class="col-xs-2">$22.00</h4>
+                            <p class="col-xs-12">half slow roasted balsamic tomato * confit shallot * sweet potato chips</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">10oz Rump Steak</h4>
+                            <h4 class="col-xs-2">$20.00</h4>
+                            <p class="col-xs-12">half slow roasted balsamic tomato * confit shallot * sweet potato chips</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">8oz Fillit Steak</h4>
+                            <h4 class="col-xs-2">$28.00</h4>
+                            <p class="col-xs-12">half slow roasted balsamic tomato * confit shallot * sweet potato chips</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">10oz Sirloin Steak on the Bone</h4>
+                            <h4 class="col-xs-2">$22.00</h4>
+                            <p class="col-xs-12">half slow roasted balsamic tomato * confit shallot * sweet potato chips</p>
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left spacerBottom">
+                            <h4 class="col-xs-10 text-danger">Add Extra</h4>
+                            <h4 class="col-xs-2 text-danger">$1.00</h4>
+                            <p class="col-xs-12 text-danger">blue cheese * veal jus * Bearnaise * garlic butter * peppercorn</p>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-8 add-cart">Add To Cart</button>
+                        </div>
+                        
+                    </section>
+                    
+                    <!--END STEAKS-->
+                    
+                </div>
+                <div class="col-xs-12 col-md-4">
+                   
+                    <!--DESSERTS-->
+                    <section id="desserts">
+                        <h2>Desserts</h2>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Home Made Apple Pie</h4>
+                            <h4 class="col-xs-2">$6.00</h4>
+                            <p class="col-xs-12">served with Paleo custard or home made Paleo vanilla ice-cream</p> 
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Paleo Raw Dark Choc Hazelnut Tart</h4>
+                            <h4 class="col-xs-2">$6.00</h4>
+                            <p class="col-xs-12">served with Paleo custard or home made Paleo vanilla ice-cream</p> 
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Classic Paleo Pecan Pie</h4>
+                            <h4 class="col-xs-2">$6.00</h4>
+                            <p class="col-xs-12">served with coconut chantilly and home-made Paleo ice-cream</p> 
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left  spacerBottom">
+                            <h4 class="col-xs-10">Selection Home-Made Paleo IceCream</h4>
+                            <h4 class="col-xs-2">$6.00</h4>
+                            <p class="col-xs-12">choose from: vanilla, strawberry, mint or chocolate</p> 
+                            <button class="btn btn-default col-xs-12 col-md-6 btn-nut">View Nutrition Info</button>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-2 add-cart">Add To Cart</button>
+                            <div class="col-xs-12 nutritional-info">
+                                <img src="images/nutritional_info.png" width="100%" alt="Soup Nutritionsl Information">
+                            </div>
+                        </div>
+                        
+                    </section>
+                    
+                    <!--END DESSERTS-->
+                    <!--DRINKS-->
+                    
+                    <section id="drinks">
+                        
+                        <h2>Drinks</h2>
+
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Soft Drink</h4>
+                            <h4 class="col-xs-2">$3.50</h4>
+                            <p class="col-xs-12">coke * diet-coke * fanta * 7-up</p> 
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-8 add-cart">Add To Cart</button>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Waters</h4>
+                            <h4 class="col-xs-2">$2.50</h4>
+                            <p class="col-xs-12">lemon grass * sparkling * lime zest</p>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-8 add-cart">Add To Cart</button>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Coffees</h4>
+                            <h4 class="col-xs-2">$3.00</h4>
+                            <p class="col-xs-12">espresso * cappuccino * latte * americano</p>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-8 add-cart">Add To Cart</button>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Waters</h4>
+                            <h4 class="col-xs-2">$2.50</h4>
+                            <p class="col-xs-12">lemon grass * sparkling * lime zest</p>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-8 add-cart">Add To Cart</button>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Teas</h4>
+                            <h4 class="col-xs-2">$3.00</h4>
+                            <p class="col-xs-12">black * mint * earl grey * camomile</p>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-8 add-cart">Add To Cart</button>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left">
+                            <h4 class="col-xs-10">Beers</h4>
+                            <h4 class="col-xs-2">$4.25</h4>
+                            <p class="col-xs-12">miller * heinekin * budweiser</p>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-8 add-cart">Add To Cart</button>
+                        </div>
+                        
+                        <div class="col-xs-12 text-left  spacerBottom">
+                            <h4 class="col-xs-10">Wines</h4>
+                            <h4 class="col-xs-2">$4.50</h4>
+                            <p class="col-xs-12">red * white * rose</p>
+                            <button class="btn btn-info col-xs-12 col-md-4 col-md-offset-8 add-cart">Add To Cart</button>
+                        </div>
+                        
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <!--Left column-->
+        <div class="col-xs-12 col-md-6">
+            <div class="spacerBottom"><h3>Send Us A Message</h3></div>
+               <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="nameInput" class="col-sm-2 control-label">Name*</label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control" id="nameInput" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput" class="col-sm-2 control-label">Email*</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="messageInput" class="col-sm-2 control-label">Message*</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control textArea" rows="8" id="messageInput" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 pull-right">
+                        <button class="btn btn-info col-xs-12 col-md-3 col-md-offset-9">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div><!--End Left Column-->
+        
+        <!--Right Column-->
+        <div class="col-xs-12 col-md-6">
+            <!--Social Media-->
+            <div class="col-xs-12 "><h3 class="spacerBottom">Follow Our Social Channels</h3></div>
+            <div>
+                <div class="col-xs-6 col-md-3 spacerBottom"><a href="#"><img src="images/social/twitterIcon.jpg"/></a></div>
+                <div class="col-xs-6 col-md-3 spacerBottom"><a href="#"><img src="images/social/faceBookIcon.jpg"/></a></div>
+                <div class="col-xs-6 col-md-3 spacerBottom"><a href="#"><img src="images/social/instagramIcon.jpg"/></a></div>
+                <div class="col-xs-6 col-md-3 spacerBottom"><a href="#"><img src="images/social/google+.jpg"/></a></div>
+            </div><!--End Social-->
+            <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 "><h3 class="spacerBottom">Opening Hours</h3></div>
+                <div class="col-xs-12 ">
+                    <p>Monday : Closed</p>
+                    <p>Tuesday : 12PM - 11PM</p>
+                    <p>Wednesday : 12PM - 11PM</p>
+                    <p>Thursday : 12PM - 11PM</p>
+                    <p>Friday : 12PM - 11PM</p>
+                    <p>Saturday :    10AM - 11PM</p>
+                    <p>Sunday :    10AM - 5PM</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 "><h3 class="spacerBottom">Find Us</h3></div>
+                <div class="col-xs-12 ">
+                    <p>6924 Velvet Field,</br>
+                    Devils Ladder,</br>
+                    Britsh Columbia,</br>
+                    V7E-1E6,<br/>
+                    CA,<br/>
+                    <strong>(604) 774-9255</strong></p>
+                </div>
+            </div>
+        </div><!--End Right Column-->
+    </div>
+    <div  class="container-fluid spacerTop">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2797.429753922947!2d-73.556777!3d45.48129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a843dde74b9%3A0x33c4b28fb9f07e1a!2sPal%C3%A9oVision!5e0!3m2!1sen!2sie!4v1430862328713" width="100%" height="400px" frameborder="0" style="border:0"></iframe>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<script src="js/jquery.js"></script>
+
+<!--Full Width Slider-->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+
+<!-- Toastr.js -->
+<script src="js/toastr.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+
+    $('.easy-sidebar-toggle').click(function(e) {
+        e.preventDefault();
+        $('.easy-sidebar-container').toggleClass('toggled');
+        $('.navbar.easy-sidebar').toggleClass('toggled');
+    });
+    $('html').on('swiperight', function(){
+        $('.easy-sidebar-container').addClass('toggled');
+        $('.navbar.easy-sidebar').addClass('toggled');
+    });
+    $('html').on('swipeleft', function(){
+        $('.easy-sidebar-container').removeClass('toggled');
+        $('.navbar.easy-sidebar').removeClass('toggled');
+    });
+
+
+</script>
+
+<!-- Add To Cart Script -->
+<script>
+    
+    $(document).ready(function() {
+        
+        $(".nutritional-info").toggle();
+        
+        toastr.options = {
+            "closeButton": true,
+            "positionClass": "toast-bottom-center",
+            "timeOut": "2000",
+        }
+        
+        $(".add-cart").click(function() {
+            var cartCount = parseInt($("#cartCount").text());
+            if ($.isNumeric(cartCount)){}
+            else
+                cartCount = 0;
+            cartCount++;
+            $("#cartCount").text(cartCount);
+            
+            var title = $(this).parent().find("h4:eq(0)").text();
+            var price = $(this).parent().find("h4:eq(1)").text();
+            price = parseInt(price.substring(1, price.length));
+            
+            $("#lstCart").append('<div class="col-xs-12 cart-item"><div class="col-xs-8"><p>' + title + '</p></div><div class="col-xs-2"><p>$' + price + '</p></div><div class="col-xs-2"><span class="glyphicon glyphicon-remove aria-hidden="true"></span></div></div>');
+            
+            var total = $("#cartTotal span").text();
+            total = parseInt(total.substring(1, price.length));
+            total = total + price;
+            $("#cartTotal span").text("$" + total);
+            
+            Command: toastr["success"](title + " Added to Cart!");
+        });
+        
+        $(document).on("click", ".glyphicon-remove",function() {
+            var cartCount = parseInt($("#cartCount").text());
+            cartCount--;
+            if(cartCount == 0)
+                $("#cartCount").text("");
+            else
+                $("#cartCount").text(cartCount);
+            
+            var price = $(this).parent().parent().find("p:eq(1)").text();
+            price = parseInt(price.substring(1, price.length));
+            var total = $("#cartTotal span").text();
+            total = parseInt(total.substring(1, price.length));
+            total = total - price;
+            $("#cartTotal span").text("$" + total);
+            
+            $(this).parent().parent().remove();
+            
+            Command: toastr["warning"]("Removed from Cart!");
+        });
+        
+        $(".btn-nut").click(function() {
+            $(this).parent().find("div:eq(0)").slideToggle();
+        });
+    });
+</script>
+
+</body>
+</html>

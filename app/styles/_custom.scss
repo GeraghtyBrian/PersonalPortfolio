@@ -3,12 +3,11 @@
 
 //--Main Colours
 $main-gray:#ecf0f1;
-$font-colour:#999;
 
 
 //--Nav Colours
-$proColour:#35cf76;
-$colColour:#e74c3c;
+$proColour:#e74c3c;
+$colColour:#35cf76;
 $sideColour:#409edd;
 
 
@@ -35,3 +34,16 @@ $sideColour:#409edd;
         -ms-transform: $transform;
             transform: $transform;
 }
+
+//Fonts
+//-------
+
+//--Family
+$main-font:'Lato';
+$title-font:'Waiting for the Sunrise', cursive;
+
+//--Font Colour
+$font-colour:#999;
+
+//--Font size
+$title-font-size:36px;

@@ -1,5 +1,5 @@
-<div ng-controller="NavCtrl as nav">
-	<nav ng-class="{'proActiveNav' : nav.getTab()==1, 'colActiveNav' : nav.getTab()==2, 'sideActiveNav' :nav.getTab()==3, 'defaultActiveNav' : nav.getTab()==0}" class="navbar navbar-default" role="navigation" >
+<div ng-controller="NavCtrl">
+	<nav class="navbar navbar-default" ng-class="{proActiveNav: isActive('/proWork'),colActiveNav: isActive('/colWork'),sideActiveNav: isActive('/sideWork')}" role="navigation" >
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="container">
 			<div class="navbar-header">
@@ -15,9 +15,15 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
-					<li class="navPro" ng-click="nav.setActiveTab(1)" ng-class="nav.getTab() == 1 ? 'proActive' : 'mainActive'"><a href="#proWork">Proffesional Projects</a></li>
-					<li class="navCol" ng-click="nav.setActiveTab(2)" ng-class="nav.getTab() == 2 ? 'colActive' : 'mainActive'"><a href="#colWork">College Projects</a></li>
-					<li class="navSide" ng-click="nav.setActiveTab(3)" ng-class="nav.getTab() == 3 ? 'sideActive' : 'mainActive'"><a href="#sideWork">Side Projects</a></li>
+				    <li class="navPro" ng-class="{proActive: isActive('/proWork')}">
+				        <a href="#/proWork"><i class=""></i>Proffessional Work</a>
+				    </li>
+				    <li class="navCol" ng-class="{colActive: isActive('/colWork')}">
+				        <a href="#/colWork"><i class=""></i>Collage Work</a>
+				    </li>
+				    <li class="navSide" ng-class="{sideActive: isActive('/sideWork')}">
+				        <a href="#sideWork"><i class=""></i>Side Work</a>
+				    </li>
 				</ul>
 				<div class="personal-links pull-right">
 					<a href="https://github.com/GeraghtyBrian" target="blank"><i class="fa fa-github fa-3x nav-git"></i></a>

@@ -1,20 +1,34 @@
 <div ng-controller="ColWorkCtrl">
+	<div class="col-wrap animated fadeIn">
+		<div class="container">
+			<i class="fa fa-graduation-cap fa-5x"></i>
+			<h1>Work done by me in Education.</h1>
+			<select>
+				<option>Filter By Type</option>
+			</select>
+		</div>
+	</div>
 	<div ng-repeat="item in collegeWork">
-		<div class="container">
-			<div class="row">
-				<h2 class="col-xs-6">{{item.name}}</h2><h3 class="pull-right">{{item.subject}}</h3>
+		<div class="port-article animated slideInUp">
+			<div class="container">
+				<div class="row">
+					<h2 class="col-xs-6">{{item.name}}</h2><h3 class="pull-right">{{item.subject}}</h3>
+				</div>
+				<h3>Brief</h3>
+				<p>{{item.brief}}</p>
 			</div>
-			<h3>Brief</h3>
-			<p>{{item.brief}}</p>
-			<h3>Description</h3>
-			<p>{{item.description}}</p>
-		</div>
-		<div class="port-image">
-			<div class="port-image-hover"></div>
-			<img ng-src="{{item.image}}" alt="">
-		</div>
-		<div class="container">
-			<p class="text-center"><a href="{{item.gitLink}}" target="blank"><i class="fa fa-github fa-lg"></i> View on GitHub</a></p>
+			<div class="port-image">
+				<div class="port-image-cover"></div>
+				<img class="img-responsive" ng-src="{{item.image}}" alt="">
+			</div>
+			<div class="container" ng-show="item.gitLink !== ' '">
+				<p class="text-center"><a href="{{item.gitLink}}" target="blank"><i class="fa fa-github fa-lg"></i> View on GitHub</a></p>
+			</div>
+			<div class="container" ng-show="item.site !== ' '">
+				<p class="text-center"><a href="{{item.site}}" target="blank"><i class="fa fa-link fa-lg"></i> View Website</a></p>
+			</div>
 		</div>
 	</div>
 </div>
+
+<div ng-include="'views/componants/footer.html'"></div>
