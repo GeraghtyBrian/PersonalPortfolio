@@ -21,6 +21,13 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "_animate.scss";
 @import "_contact-form.scss";
 
+
+//FancyBox
+//----------
+@import "_jquery.fancybox.scss";
+@import "helpers/_jquery.fancybox-buttons.scss";
+@import "helpers/_jquery.fancybox-thumbs.scss";
+
 body{
 	font-family: $main-font;
 }

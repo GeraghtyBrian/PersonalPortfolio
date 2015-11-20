@@ -1,9 +1,37 @@
-<div class="side-wrap animated fadeIn">
+<div ng-controller="SideWorkCtrl">
+	<div class="side-wrap animated fadeIn">
 	<div class="container">
 		<i class="fa fa-lightbulb-o fa-5x"></i>
-		<h1>OOPS ... There doesnt appear to be anything here yet.</h1>
-		<h3>Lets work together to fix that.</h3>
+		<h1>Work done on the side.</h1>
 	</div>
 </div>
-
+	<div ng-repeat="item in SideWork track by $index">
+		<div class="port-article animated slideInUp">
+			<div class="container">
+				<div class="row">
+					<h2 class="col-xs-6">{{item.name}}</h2><h3 class="pull-right">{{item.subject}}</h3>
+				</div>
+				<h3>Description</h3>
+				<p>{{item.brief}}</p>
+			</div>
+			<div class="container-fluid port-image">
+				<div  ng-repeat="pic in item.image track by $index" class="col-xs-12 col-md-4">
+					<a class="fancybox" rel="{{item.name}}" href="{{pic.href}}"><img ng-src="{{pic.href}}" alt=""></a>
+				</div>
+			</div>
+			<div class="container" ng-show="item.gitLink !== ' '">
+				<p class="text-center"><a href="{{item.gitLink}}" target="blank"><i class="fa fa-github fa-lg"></i> View on GitHub</a></p>
+			</div>
+			<div class="container" ng-show="item.site !== ' '">
+				<p class="text-center"><a href="{{item.site}}" target="blank"><i class="fa fa-link fa-lg"></i> View Website</a></p>
+			</div>
+		</div>
+	</div>
+</div>
 <div ng-include="'views/componants/footer.html'"></div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>

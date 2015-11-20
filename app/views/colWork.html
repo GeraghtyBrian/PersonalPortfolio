@@ -3,12 +3,9 @@
 		<div class="container">
 			<i class="fa fa-graduation-cap fa-5x"></i>
 			<h1>Work done by me in Education.</h1>
-			<select>
-				<option>Filter By Type</option>
-			</select>
 		</div>
 	</div>
-	<div ng-repeat="item in collegeWork">
+	<div ng-repeat="item in collegeWork track by $index">
 		<div class="port-article animated slideInUp">
 			<div class="container">
 				<div class="row">
@@ -17,9 +14,10 @@
 				<h3>Brief</h3>
 				<p>{{item.brief}}</p>
 			</div>
-			<div class="port-image">
-				<div class="port-image-cover"></div>
-				<img class="img-responsive" ng-src="{{item.image}}" alt="">
+			<div class="container-fluid port-image">
+				<div  ng-repeat="pic in item.image track by $index" class="col-xs-12 col-md-4">
+					<a class="fancybox" rel="{{item.name}}" href="{{pic.href}}"><img ng-src="{{pic.href}}" alt=""></a>
+				</div>
 			</div>
 			<div class="container" ng-show="item.gitLink !== ' '">
 				<p class="text-center"><a href="{{item.gitLink}}" target="blank"><i class="fa fa-github fa-lg"></i> View on GitHub</a></p>
@@ -30,5 +28,10 @@
 		</div>
 	</div>
 </div>
-
 <div ng-include="'views/componants/footer.html'"></div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
