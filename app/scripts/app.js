@@ -39,6 +39,11 @@ angular
         controller: 'ColWorkCtrl',
         controllerAs: 'colWork'
       })
+      .when('/contactthanks', {
+        templateUrl: 'views/contactthanks.html',
+        controller: 'ContentthanksCtrl',
+        controllerAs: 'cthanks'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -16,7 +16,7 @@
 			</div>
 			<div class="container-fluid port-image">
 				<div  ng-repeat="pic in item.image track by $index" class="col-xs-12 col-md-4">
-					<a class="fancybox" rel="{{item.name}}" href="{{pic.href}}"><img ng-src="{{pic.href}}" alt=""></a>
+					<a class="fancybox" rel="{{item.name}}" href="{{pic.hrefFull}}"><img ng-src="{{pic.hrefThumb}}" alt=""></a>
 				</div>
 			</div>
 			<div class="container" ng-show="item.gitLink !== ' '">

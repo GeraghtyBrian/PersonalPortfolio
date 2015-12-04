@@ -6,7 +6,7 @@ $Message = Trim(stripslashes($_POST['Message']));
 
 $EmailFrom = $Email;
 $EmailTo = "brian_geraghty@outlook.com";
-$Subject = "Nice & Simple Contact Form by CSS-Tricks";
+$Subject = "Message From Portfolio Site";
 
 // validation
 $validationOK=true;
@@ -32,11 +32,11 @@ $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
 // redirect to success page 
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
+	header('Location: /#/contactthanks');
+	exit;
 }
-/*
+
 else{
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
 }
 ?>
-*/
