@@ -2,16 +2,15 @@
 	<div class="side-wrap animated fadeIn">
 	<div class="container">
 		<i class="fa fa-lightbulb-o fa-5x"></i>
-		<h1>Work done on the side.</h1>
+		<h1>Everything Else.</h1>
 	</div>
 </div>
 	<div ng-repeat="item in SideWork track by $index">
 		<div class="port-article animated slideInUp">
 			<div class="container">
 				<div class="row">
-					<h2 class="col-xs-6">{{item.name}}</h2><h3 class="pull-right">{{item.subject}}</h3>
+					<h2 class="col-xs-6 side-item-header">{{item.name}}</h2><h3 class="pull-right">{{item.subject}}</h3>
 				</div>
-				<h3>Description</h3>
 				<p>{{item.brief}}</p>
 			</div>
 			<div class="container-fluid port-image">

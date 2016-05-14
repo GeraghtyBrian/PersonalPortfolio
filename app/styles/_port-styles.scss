@@ -54,6 +54,10 @@
 	background-color: $proColour;
 }
 
+.pro-item-header{
+	color: $proColour;
+}
+
 //College Work Portfollio
 //-------------------------
 
@@ -62,10 +66,18 @@
 	background-color: $colColour;
 }
 
+.col-item-header{
+	color: $colColour;
+}
+
 //Side Work Portfollio
 //-------------------------
 
 .side-wrap{
 	@extend .general-wrap;
 	background-color: $sideColour;
+}
+
+.side-item-header{
+	color: $sideColour;
 }

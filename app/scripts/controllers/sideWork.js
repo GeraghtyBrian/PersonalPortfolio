@@ -3,6 +3,19 @@
 angular.module('personalPortfolioApp')
    .controller('SideWorkCtrl',['$scope', function ($scope) {
   		$scope.SideWork = [
+  			{
+		        name:'Colour Clock',
+		        subject:'Web Site',
+		        brief:'Simple, stylish digital clock with customisable settings. ',
+		        description:"",
+		        image:[
+		          {hrefFull:'images/sideWorkImages/colourclock/full/cc1.gif', hrefThumb:'images/sideWorkImages/colourclock/thumb/cc1.gif'},
+		          {hrefFull:'images/sideWorkImages/colourclock/full/cc2.gif', hrefThumb:'images/sideWorkImages/colourclock/thumb/cc2.gif'},
+		          {hrefFull:'images/sideWorkImages/colourclock/full/cc3.gif', hrefThumb:'images/sideWorkImages/colourclock/thumb/cc3.gif'}
+		        ],
+		        gitLink:'https://github.com/GeraghtyBrian/ColourClock',
+		        site:'../portfolioSites/colourclock/index.html',
+		      },	
 	  		{
 		        name:'Bank of Ireland',
 		        subject:'Graphics',
